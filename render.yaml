@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: v2ray
+    env: docker
+    image: teddysun/v2ray
+    plan: free
+    autoDeploy: false
+    ports:
+      - port: 10086
+        protocol: tcp
